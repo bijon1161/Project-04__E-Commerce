@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+      <div class="row">
+        <div class="col">
+          <div class="col-sm-6 mx-auto">
+            <p>{{ content }}</p>
+            <form method='post'
+                  action="{% url 'contact' %}"
+                  class="contact-form"
+            > {% csrf_token %}
+              {{ form }}
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+{% endblock %}
