@@ -1,0 +1,44 @@
+[
+{
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+        "title": "T-Shirt",
+        "slug": "t-shirt",
+        "description": "Awesome t-shirt, buy it.",
+        "price": "650.00",
+        "image": "products/6811960/6811960.jpeg",
+        "featured": false,
+        "active": true,
+        "timestamp": "2020-01-29T05:12:21.486Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 2,
+    "fields": {
+        "title": "Hat",
+        "slug": "hat",
+        "description": "Bengali old school hat",
+        "price": "240.00",
+        "image": "products/653477/653477.jpeg",
+        "featured": false,
+        "active": true,
+        "timestamp": "2020-01-29T05:12:21.486Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+        "title": "Kid Dress",
+        "slug": "genji",
+        "description": "deshi genji",
+        "price": "380.00",
+        "image": "products/192762/192762.jpeg",
+        "featured": true,
+        "active": true,
+        "timestamp": "2020-01-29T05:12:21.486Z"
+    }
+}
+]

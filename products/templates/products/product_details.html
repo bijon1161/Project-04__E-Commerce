@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+    <div class="row">
+        <div class="col-md-12 col-md-6">
+            <h2>{{ object.title|title }}</h2>
+            {% if object.timestamp %}
+                <p> {{ object.timestamp|timesince }} ago</p>
+            {% endif %}
+            <img src="{{ object.image.url }}" alt="image" width="300px">
+            <p>{{ object.description }}</p>
+            <p>BDT: {{ object.price }}</p>
+        </div>
+        <div class="col-12 col-md-6">
+            {% include 'products/snippets/add_to_cart.html' with product=object cart=cart %}
+        </div>
+    </div>
+
+{% endblock %}

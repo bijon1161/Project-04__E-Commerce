@@ -1,0 +1,16 @@
+<div class="card" style="width: 18rem;">
+    <a href="{{ instance.get_absolute_url }}">
+        <img class="card-img-top"
+             src="{{ instance.image.url }}"
+             alt="{{ instance.title }} image"
+        width="300px" height="340px">
+    </a>
+  <div class="card-body">
+    <h5 class="card-title">{{ instance.title }}</h5>
+    <p class="card-text">{{ instance.description | truncatewords:12 }}</p>
+    <p class="card-text">BDT: <strong>{{ instance.price }}</strong></p>
+    <a href="{{ instance.get_absolute_url }}" class="btn btn-warning">View</a>
+    {% include 'products/snippets/add_to_cart.html' with product=instance cart=cart %}
+
+  </div>
+</div>
